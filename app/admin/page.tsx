@@ -103,15 +103,6 @@ export default async function AdminDashboardPage() {
       text: "text-emerald-700",
     },
     {
-      label: "Publicaciones",
-      icon: <NewspaperIcon className="w-7 h-7 text-blue-300" />,
-      color: "from-fuchsia-100 to-fuchsia-50",
-      href: "/admin/publicaciones",
-      value: publicaciones,
-      bgIcon: "bg-fuchsia-50",
-      text: "text-fuchsia-700",
-    },
-    {
       label: "Compras",
       icon: <ShoppingCartIcon className="w-7 h-7 text-blue-300" />,
       color: "from-orange-100 to-orange-50",
