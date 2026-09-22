@@ -124,7 +124,7 @@ La aplicación es un **monolito full-stack** construido sobre el App Router de N
 ### 1. Clonar el repositorio e instalar dependencias
 
 ```bash
-git clone https://github.com/ayrtoncatri/beatbox-chile-web.git
+git clone https://github.com/darkwolfdev0-chl/beatbox-chile-web.git
 cd beatbox-chile-web
 npm ci
 ```
