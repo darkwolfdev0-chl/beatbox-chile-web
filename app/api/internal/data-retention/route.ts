@@ -15,7 +15,7 @@ function hasValidCronSecret(req: NextRequest): boolean {
   return received.length === expected.length && timingSafeEqual(received, expected);
 }
 
-export async function POST(req: NextRequest) {
+async function handleDataRetention(req: NextRequest) {
   if (!hasValidCronSecret(req)) {
     return NextResponse.json({ error: "No autorizado" }, { status: 401 });
   }
@@ -28,3 +28,6 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "Error al ejecutar retencion" }, { status: 500 });
   }
 }
+
+export const GET = handleDataRetention;
+export const POST = handleDataRetention;
