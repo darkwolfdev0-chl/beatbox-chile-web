@@ -2,7 +2,6 @@ import Banner from "@/components/home/Banner";
 import Anuncios from "@/components/home/Anuncios";
 import NoticiasList from "@/components/home/NoticiasList";
 import Historia from "@/components/home/Historia";
-import PublicacionesRow from "@/components/publicaciones/PublicacionesRow";
 import type { Metadata } from "next";
 import UpcomingEvents from "@/components/home/UpcomingEvents";
 
@@ -36,18 +35,6 @@ export default function HomePage() {
           <Banner />
           <UpcomingEvents />
           <Anuncios />
-
-          <div className="border-y border-fuchsia-300/15 bg-[#05060d]/80 py-12">
-            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-              <p className="home-kicker">Desde la comunidad</p>
-              <h2 className="home-title mt-2 text-5xl text-white sm:text-6xl md:text-7xl">
-                Últimas <span className="text-fuchsia-300">publicaciones</span>
-              </h2>
-            </div>
-            <PublicacionesRow title="Blog" tipo="blog" />
-            <PublicacionesRow title="Noticias" tipo="noticia" />
-          </div>
-
           <NoticiasList />
           <Historia />
         </div>
